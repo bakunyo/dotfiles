@@ -11,7 +11,6 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim='vi'
 alias ll='ls -la'
 alias bx='bundle exec'
 

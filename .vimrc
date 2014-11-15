@@ -1,16 +1,30 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+if has('vim_starting')
+  set nocompatible               " be iMproved
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call neobundle#begin(expand('~/.vim/bundle/'))
 
+" originalrepos on github
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/vimproc'
+"NeoBundle 'VimClojure'
+"NeoBundle 'Shougo/vimshell'
+"NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'Shougo/neocomplcache'
+"NeoBundle 'Shougo/neosnippet'
+"NeoBundle 'jpalardy/vim-slime'
+"NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+
+call neobundle#end()
+
+filetype plugin indent on     " required!
+syntax on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck

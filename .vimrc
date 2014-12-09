@@ -10,7 +10,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " from originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
-NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'w0ng/vim-hybrid'

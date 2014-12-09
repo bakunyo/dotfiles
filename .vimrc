@@ -178,6 +178,7 @@ let file_name = expand("%")
 if has('vim_starting') && file_name == ""
     autocmd VimEnter * NERDTree ./
 endif
+let NERDTreeShowHidden = 1 " 隠しファイルを表示
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.

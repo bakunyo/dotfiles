@@ -8,3 +8,4 @@
         l  = log -5 --pretty='%h %ci %s %cn'
 [core]
 	editor = vim
+	excludesfile = ~/dotfiles/gitignore

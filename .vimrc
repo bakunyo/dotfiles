@@ -75,6 +75,7 @@ set statusline=%n\:%y%F\ \<%{(&fenc!=''?&fenc:&enc).'\|'.&ff.'\>'}%m%r%=<%l/%L:%
 " design
 "--------------------
 colorscheme hybrid
+"colorscheme molokai
 set title " タイトルバーを表示する
 set number " 行番号を表示する
 set ruler " ルーラ（画面右下の行情報）を表示する

@@ -16,6 +16,7 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'kana/vim-fakeclip'
+NeoBundle 'mattn/emmet-vim'
 
 call neobundle#end()
 

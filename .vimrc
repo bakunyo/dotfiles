@@ -18,6 +18,13 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'mattn/emmet-vim'
 
+"--------------------
+" neocomplete
+"--------------------
+if filereadable(expand('vimrcs/neocomplete.vimrc'))
+  source vimrcs/neocomplete.vimrc
+endif
+
 call neobundle#end()
 
 filetype plugin indent on     " required!

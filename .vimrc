@@ -17,6 +17,7 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'tpope/vim-fugitive'
 
 "--------------------
 " neocomplete

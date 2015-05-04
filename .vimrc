@@ -19,6 +19,13 @@ NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-fugitive'
 
+" for markdown-preview
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:vim_markdown_folding_disabled=1
+
 "--------------------
 " neocomplete
 "--------------------

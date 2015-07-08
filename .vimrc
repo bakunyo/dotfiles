@@ -45,6 +45,7 @@ set nocompatible " viとの互換性をとらない(vimの独自拡張機能を�
 "--------------------
 " edit
 "--------------------
+set hidden "編集中でもバッファのみに置いておける
 set showmatch "対応する括弧を表示
 set matchtime=1 "showmatchの表示時間
 set showcmd "入力中のコマンドをステータスに表示
@@ -89,8 +90,8 @@ set statusline=%n\:%y%F\ \<%{(&fenc!=''?&fenc:&enc).'\|'.&ff.'\>'}%m%r%=<%l/%L:%
 "--------------------
 " design
 "--------------------
-colorscheme hybrid
-"colorscheme molokai
+"colorscheme hybrid
+colorscheme molokai
 set title " タイトルバーを表示する
 set number " 行番号を表示する
 set ruler " ルーラ（画面右下の行情報）を表示する

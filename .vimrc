@@ -8,6 +8,7 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " from originalrepos on github
+NeoBundle 'rking/ag.vim'
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'pangloss/vim-javascript'
@@ -16,8 +17,6 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'kana/vim-fakeclip'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'tpope/vim-fugitive'
 
 " for markdown-preview
 NeoBundle 'plasticboy/vim-markdown'

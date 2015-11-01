@@ -8,11 +8,13 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " from originalrepos on github
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
+
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'scrooloose/nerdtree'
+" NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'groenewege/vim-less'
@@ -144,11 +146,17 @@ endif
 "--------------------
 " nerdtree
 " http://kokukuma.blogspot.jp/2011/12/vim-essential-plugin-nerdtree.html
-let file_name = expand("%")
-if has('vim_starting') && file_name == ""
-    autocmd VimEnter * NERDTree ./
+" let file_name = expand("%")
+" if has('vim_starting') && file_name == ""
+"     autocmd VimEnter * NERDTree ./
+" endif
+" let NERDTreeShowHidden = 1 " 隠しファイルを表示
+
+" ctrlp
+if executable('ag')
+  let g:ctrlp_use_caching=0
+  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
 endif
-let NERDTreeShowHidden = 1 " 隠しファイルを表示
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.

@@ -96,6 +96,12 @@ set number " 行番号を表示する
 set ruler " ルーラ（画面右下の行情報）を表示する
 
 "--------------------
+" copy to clipboard
+"--------------------
+set clipboard=unnamed,autoselect
+set paste
+
+"--------------------
 " syntax highlight
 "--------------------
 syntax on

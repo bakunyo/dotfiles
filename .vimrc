@@ -10,6 +10,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " from originalrepos on github
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'thinca/vim-qfreplace'
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
@@ -154,6 +155,9 @@ if executable('ag')
   let g:ctrlp_use_caching=0
   let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
 endif
+
+" Qfreplace alias
+command Qf Qfreplace
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.

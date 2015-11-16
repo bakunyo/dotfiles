@@ -14,7 +14,6 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'pangloss/vim-javascript'
-" NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'groenewege/vim-less'
@@ -144,14 +143,6 @@ endif
 "--------------------
 " vendor
 "--------------------
-" nerdtree
-" http://kokukuma.blogspot.jp/2011/12/vim-essential-plugin-nerdtree.html
-" let file_name = expand("%")
-" if has('vim_starting') && file_name == ""
-"     autocmd VimEnter * NERDTree ./
-" endif
-" let NERDTreeShowHidden = 1 " 隠しファイルを表示
-
 " ctrlp
 if executable('ag')
   let g:ctrlp_use_caching=0

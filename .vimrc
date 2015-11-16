@@ -11,6 +11,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
+NeoBundle 'tpope/vim-fugitive'
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'

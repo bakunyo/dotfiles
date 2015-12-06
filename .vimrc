@@ -44,6 +44,7 @@ filetype plugin indent on     " required!
 " base
 "--------------------
 set nocompatible " viとの互換性をとらない(vimの独自拡張機能を使う為)
+let mapleader = "\<Space>"
 
 "--------------------
 " edit

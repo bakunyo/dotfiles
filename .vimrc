@@ -12,6 +12,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'fuenor/qfixhowm'
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
@@ -159,6 +160,14 @@ endif
 
 " Qfreplace alias
 command Qf Qfreplace
+
+" QFixHowm
+let QFixHowm_Key       = 'g'
+let howm_dir           = '~/memo'
+let howm_filename      = '%Y/%m/%Y-%m-%d-%H%M%S.howm'
+let howm_fileencoding  = 'utf-8'
+let howm_fileformat    = 'unix'
+let QFixHowm_DiaryFile = 'diary/%Y/%m/%Y-%m-%d-000000.howm'
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.

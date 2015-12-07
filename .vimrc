@@ -13,6 +13,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fuenor/qfixhowm'
+NeoBundle 'itchyny/lightline.vim'
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-rails'
@@ -88,7 +89,6 @@ set splitright "新しいウィンドウを右に開く
 " status line
 "--------------------
 set laststatus=2
-set statusline=%n\:%y%F\ \<%{(&fenc!=''?&fenc:&enc).'\|'.&ff.'\>'}%m%r%=<%l/%L:%p%%>
 
 "--------------------
 " design

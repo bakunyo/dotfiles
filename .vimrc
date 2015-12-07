@@ -12,6 +12,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'jreybert/vimagit'
 NeoBundle 'fuenor/qfixhowm'
 NeoBundle 'itchyny/lightline.vim'
 

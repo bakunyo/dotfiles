@@ -172,6 +172,12 @@ let howm_fileencoding  = 'utf-8'
 let howm_fileformat    = 'unix'
 let QFixHowm_DiaryFile = 'diary/%Y/%m/%Y-%m-%d-000000.howm'
 
+" Vimagit
+let g:magit_show_help              = 0
+let g:magit_default_show_all_files = 2
+let g:magit_default_fold_level     = 2
+let g:magit_default_sections       = ['global_help', 'info', 'unstaged', 'staged', 'commit']
+
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck

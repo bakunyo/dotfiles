@@ -4,6 +4,14 @@ alias up="cd ..; ls -l"
 alias f="open ."
 alias ctags="`brew --prefix`/bin/ctags"
 
+if [ -f ~/git-functions.sh ] ; then
+  . ~/git-functions.sh
+fi
+
+if [ -f ~/.bashrc ] ; then
+  . ~/.bashrc
+fi
+
 # function
 # 英単語検索
 dic () {
@@ -21,20 +29,6 @@ cdf () {
                 echo 'No Finder window found' >&2
         fi
 }
-
-git_branch() {
-  __git_ps1 '(git:%s)'
-}
-
-source ~/dotfiles/git-prompt.sh
-# use bash-completion
-if [ -f ~/dotfiles/git-completion.bash ]; then
-# if [ -f /opt/local/share/git-core/git-prompt.sh ]; then
-  # . /opt/local/share/git-core/git-prompt.sh
-  export PS1='\[\033[01;32m\][\u@\h \t]\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;34m\]\$\[\033[00m\] '
-else
-  export PS1='\[\033[01;32m\][\u@\h \t]\[\033[01;33m\] \w \n\[\033[01;34m\]\$\[\033[00m\] '
-fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

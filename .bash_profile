@@ -4,8 +4,8 @@ alias up="cd ..; ls -l"
 alias f="open ."
 alias ctags="`brew --prefix`/bin/ctags"
 
-if [ -f ~/git-functions.sh ] ; then
-  . ~/git-functions.sh
+if [ -f ~/dotfiles/git-functions.sh ] ; then
+  . ~/dotfiles/git-functions.sh
 fi
 
 if [ -f ~/.bashrc ] ; then

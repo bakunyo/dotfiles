@@ -21,7 +21,7 @@ function git-delete-merged() {
   if [[ $ans =~ ^y(es)?$ ]]; then
     echo "$merged" | xargs git branch -d
   else
-    echo "cancelled."
+    echo 'Cancelled.'
   fi
 }
 

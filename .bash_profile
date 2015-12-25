@@ -8,8 +8,8 @@ if [ -f ~/dotfiles/git-functions.sh ] ; then
   . ~/dotfiles/git-functions.sh
 fi
 
-if [ -f ~/.bashrc ] ; then
-  . ~/.bashrc
+if [ -f ~/dotfiles/.bashrc ] ; then
+  . ~/dotfiles/.bashrc
 fi
 
 # function

@@ -1,11 +1,6 @@
 [user]
 	name = Izuta Hiroyuki
 	email = izuta.hiroyuki@gmail.com
-[alias]
-	co = checkout
-        s  = status
-        b  = branch
-        l  = log -5 --pretty='%h %ci %s %cn'
 [core]
 	editor = vim
 	excludesfile = ~/dotfiles/gitignore

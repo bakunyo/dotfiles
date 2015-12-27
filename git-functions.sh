@@ -25,4 +25,38 @@ function git-delete-merged() {
   fi
 }
 
+function git-checkout-force() {
+  local branch=$1
+  if [ $branch = $(git rev-parse --abbrev-ref HEAD) ]; then
+    echo "Already on '$branch'" >&2
+    return 0
+  fi
+  git branch -D $branch > /dev/null 2>&1
+  git checkout -b $branch
+}
+
+alias ga='git add'
+alias gap='git add -p'
+alias gb='git branch'
+alias gcm='git commit -v'
+alias gca='git commit --amend'
+alias gco='git checkout'
+alias gcof='git-checkout-force'
+alias gcp='git cherry-pick'
+alias gd='git diff'
 alias gdm='git-delete-merged'
+alias gl="git log --pretty='%h %ci %s %cn'"
+alias gpl='git pull'
+alias grb='git rabase'
+alias grbi='git rabse -i'
+alias grba='git rabse --abort'
+alias grbc='git rabse --continue'
+for n in $(seq 10); do
+  alias grbi$n="git rebase -i HEAD~$n"
+done
+alias grs='git reset'
+for n in $(seq 10); do
+  alias grs$n="git reset HEAD~$n"
+done
+alias gs='git status'
+alias gps='git push'

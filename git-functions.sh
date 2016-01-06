@@ -47,10 +47,10 @@ alias gd='git diff'
 alias gdm='git-delete-merged'
 alias gl="git log --pretty='%h %ci %s %cn'"
 alias gpl='git pull'
-alias grb='git rabase'
-alias grbi='git rabse -i'
-alias grba='git rabse --abort'
-alias grbc='git rabse --continue'
+alias grb='git rebase'
+alias grbi='git rebase -i'
+alias grba='git rebase --abort'
+alias grbc='git rebase --continue'
 for n in $(seq 10); do
   alias grbi$n="git rebase -i HEAD~$n"
 done

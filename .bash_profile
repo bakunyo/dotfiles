@@ -30,5 +30,6 @@ cdf () {
         fi
 }
 
+export BUNDLER_EDITOR=vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

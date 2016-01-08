@@ -6,3 +6,5 @@
 	excludesfile = ~/dotfiles/gitignore
 [push]
 	default = current
+[rebase]
+	autostash = true

@@ -59,4 +59,5 @@ for n in $(seq 10); do
   alias grs$n="git reset HEAD~$n"
 done
 alias gs='git status'
+alias gsh='git show'
 alias gps='git push'

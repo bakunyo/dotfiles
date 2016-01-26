@@ -45,6 +45,7 @@ alias gcof='git-checkout-force'
 alias gcp='git cherry-pick'
 alias gd='git diff'
 alias gdm='git-delete-merged'
+alias gg='git grep'
 alias gl="git log --pretty='%h %ci %s %cn'"
 alias gpl='git pull'
 alias grb='git rebase'

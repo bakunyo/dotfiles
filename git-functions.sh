@@ -35,6 +35,16 @@ function git-checkout-force() {
   git checkout -b $branch
 }
 
+function git-committer-change() {
+  git filter-branch --commit-filter '
+    GIT_AUTHOR_NAME="Izuta Hiroyuki"
+    GIT_AUTHOR_EMAIL="izuta.hiroyuki@gmail.com"
+    GIT_COMMITTER_NAME="Izuta Hiroyuki"
+	GIT_COMMITTER_EMAIL="izuta.hiroyuki@gmail.com"
+	git commit-tree "$@"
+  ' HEAD
+}
+
 alias ga='git add'
 alias gap='git add -p'
 alias gb='git branch'

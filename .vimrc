@@ -21,23 +21,9 @@
 set nocompatible           " Use Vim, not vi
 
 "--------------------
-" plugins
+" plugins(dein)
 "--------------------
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-endif
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-source ~/.vim/ag.vim
-source ~/.vim/colors.vim
-source ~/.vim/ctrlp.vim
-source ~/.vim/qfixhowm.vim
-source ~/.vim/vimagit.vim
-
-call neobundle#end()
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+source ~/.vim/dein.vim
 
 "--------------------
 " NeoVim only setting
@@ -63,6 +49,7 @@ set fileformats=unix,dos,mac " Formats of new line.
 if exists('&ambiwidth')
   set ambiwidth=double     " Set ambchar of double width
 endif
+autocmd FileType * setlocal formatoptions-=ro  " disable auto commentout.
 
 
 "--------------------
@@ -108,7 +95,7 @@ nnoremap x "_x
 "--------------------
 " indent
 "--------------------
-set autoindent             " Indent according to previous line.
+" set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
 set tabstop     =4         " Number of spaces that a <Tab> in the file counts for.
 set softtabstop =2         " Tab key indents by 2 spaces.

@@ -40,6 +40,14 @@ call neobundle#end()
 NeoBundleCheck
 
 "--------------------
+" NeoVim only setting
+"--------------------
+if has('nvim')
+else
+  set clipboard   =unnamed,autoselect " Set clipboard.
+endif
+
+"--------------------
 " base
 "--------------------
 filetype plugin indent on  " Load plugins according to detected filetype.
@@ -92,7 +100,6 @@ hi Visual guibg=Blue ctermbg=Blue
 "--------------------
 " copy to clipboard
 "--------------------
-set clipboard   =unnamed,autoselect " Set clipboard.
 set paste                  " Put Vim in Paste mode.
 " Don't yank when x(delete command).
 nnoremap x "_x

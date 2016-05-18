@@ -32,5 +32,6 @@ cdf () {
 
 export LESS=-nqR
 export BUNDLER_EDITOR=vim
+export XDG_CONFIG_HOME=$HOME/dotfiles  # config home for neovim
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

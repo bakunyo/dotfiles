@@ -8,6 +8,30 @@ else
   export PS1='\[\033[01;32m\][\u@\h \t]\[\033[01;33m\] \w \n\[\033[01;34m\]\$\[\033[00m\] '
 fi
 
+function git-push-for-review() {
+  echo -en "Specify branch of compare from(develop):"
+  read ans
+  [[ $ans = "" ]] && from='develop' || from=$ans
+
+  current_branch=`git branch | egrep '\*' | tr -d "* "`
+  echo -en "Specify branch of compare to(${current_branch}):"
+  read ans
+  [[ $ans = "" ]] && to=$current_branch || to=$ans
+
+  echo "from = ${from}, to = ${to}"
+  from_branch="${from}_for_review_${to}"
+
+  git checkout $from
+  git checkout -b $from_branch
+  git push origin $from_branch
+
+  git checkout $to
+  git push origin $to
+  echo "git pushed from_branch as: ${from_branch}"
+  echo "git pushed to_branch as: ${to}"
+  echo "Let's create pull request on remote repository."
+}
+
 function git-delete-merged() {
   merged=`git branch --merged | egrep -v '\*|develop|master'`
   if [[ $merged = "" ]]; then
@@ -72,3 +96,4 @@ done
 alias gs='git status'
 alias gsh='git show'
 alias gps='git push'
+alias gpsfr='git-push-for-review'

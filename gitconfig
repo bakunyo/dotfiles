@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/dotfiles/gitignore
+	precomposeunicode = true
 [push]
 	default = current
 [rebase]

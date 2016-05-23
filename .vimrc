@@ -29,7 +29,9 @@ source ~/.vim/dein.vim
 " NeoVim only setting
 "--------------------
 if has('nvim')
+  set nopaste                " Put Nvim in Paste mode.
 else
+  set paste                  " Put Vim in Paste mode.
   set clipboard   =unnamed,autoselect " Set clipboard.
 endif
 
@@ -87,7 +89,6 @@ hi Visual guibg=Blue ctermbg=Blue
 "--------------------
 " copy to clipboard
 "--------------------
-set paste                  " Put Vim in Paste mode.
 " Don't yank when x(delete command).
 nnoremap x "_x
 

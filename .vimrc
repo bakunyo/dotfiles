@@ -96,7 +96,7 @@ nnoremap x "_x
 "--------------------
 " indent
 "--------------------
-" set autoindent             " Indent according to previous line.
+set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
 set tabstop     =4         " Number of spaces that a <Tab> in the file counts for.
 set softtabstop =2         " Tab key indents by 2 spaces.

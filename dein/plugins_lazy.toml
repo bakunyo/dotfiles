@@ -1,4 +1,5 @@
 # Emmet
+# use space & comma in normal mode
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = 'html'

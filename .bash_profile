@@ -3,13 +3,14 @@ alias ll='ls -la'
 alias up="cd ..; ls -l"
 alias f="open ."
 alias ctags="`brew --prefix`/bin/ctags"
+alias cdg='cd $(ghq list -p | peco)'
 
 if [ -f ~/dotfiles/git-functions.sh ] ; then
   . ~/dotfiles/git-functions.sh
 fi
 
 if [ -f ~/dotfiles/.bashrc ] ; then
-  . ~/dotfiles/.bashrc
+  . ~/.bashrc
 fi
 
 # function
@@ -40,3 +41,5 @@ export LESS=-nqR
 export BUNDLER_EDITOR=vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin

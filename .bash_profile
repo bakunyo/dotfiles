@@ -4,6 +4,7 @@ alias up="cd ..; ls -l"
 alias f="open ."
 alias ctags="`brew --prefix`/bin/ctags"
 alias cdg='cd $(ghq list -p | peco)'
+alias dcp='docker-compose'
 
 if [ -f ~/dotfiles/git-functions.sh ] ; then
   . ~/dotfiles/git-functions.sh

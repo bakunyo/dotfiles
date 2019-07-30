@@ -96,5 +96,7 @@ for n in $(seq 10); do
 done
 alias gs='git status'
 alias gsh='git show'
+alias gskip='git update-index --skip-worktree'
+alias gnoskip='git update-index --no-skip-worktree'
 alias gps='git push'
 alias gpsfr='git-push-for-review'

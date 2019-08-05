@@ -39,6 +39,7 @@ if which nvim > /dev/null; then
 fi
 
 export LESS=-nqR
+export EDITOR=vim
 export BUNDLER_EDITOR=vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

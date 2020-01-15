@@ -1,7 +1,7 @@
 # How to use
 
 ```
-git clone https://github.com/bakunyo/dotfiles.git
+git clone git://github.com/bakunyo/dotfiles.git
 
 ./dotfiles/create_links.sh
 

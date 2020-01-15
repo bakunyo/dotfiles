@@ -38,10 +38,22 @@ if which nvim > /dev/null; then
   alias vim=nvim
 fi
 
+# rbenv settings
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then
+  eval "$(rbenv init -)";
+fi
+
+# goenv settings
+export PATH="$HOME/.goenv/bin:$PATH"
+if which goenv > /dev/null; then
+  eval "$(goenv init -)";
+fi
+
+# settings for Golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 export LESS=-nqR
 export EDITOR=vim
 export BUNDLER_EDITOR=vim
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin

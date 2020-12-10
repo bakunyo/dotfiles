@@ -10,7 +10,7 @@ rm .agignore
 ln -s dotfiles/.agignore .agignore
 
 rm .bash_profile
-ln -s dotfiles/.bash_profile .bash_profile
+ln -s dotfiles/.zshrc .zshrc
 
 rm .gitignore
 ln -s dotfiles/gitignore .gitignore

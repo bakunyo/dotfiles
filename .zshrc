@@ -6,7 +6,6 @@ autoload -Uz compinit && compinit
 
 # プロンプトの表示オプション
 GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
 
 # プロンプトの表示設定
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f

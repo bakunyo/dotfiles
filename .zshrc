@@ -37,6 +37,15 @@ if which nvim > /dev/null; then
   alias vim=nvim
 fi
 
+if which anyenv > /dev/null; then
+  eval "$(anyenv init -)"
+fi
+
+if which go > /dev/null; then
+  export GOPATH=$HOME/go
+  export PATH=$PATH:$GOPATH/bin
+fi
+
 export LESS=-nqR
 export EDITOR=vim
 export BUNDLER_EDITOR=vim

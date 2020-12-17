@@ -1,3 +1,6 @@
+# emacs keybind
+bindkey -e
+
 source ~/dotfiles/git-prompt.sh
 
 # git-completionの読み込み
@@ -10,6 +13,21 @@ GIT_PS1_SHOWDIRTYSTATE=true
 # プロンプトの表示設定
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
 \$ '
+
+# history 検索
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
+
+# help の有効化
+autoload -U run-help
+autoload run-help-git
+unalias run-help
+alias help=run-help
 
 # zsh-completions
 if type brew &>/dev/null; then
